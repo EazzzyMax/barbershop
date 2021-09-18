@@ -20,10 +20,15 @@ li {
   padding: 0;
 }
 
+
 body {
    font-family: 'PT Sans Narrow';
    background-color: #292929;
    color: white;
+}
+img {
+   width: 100%;
+   display: block;
 }
 
 h1 {
@@ -56,47 +61,155 @@ a {
 p:not(.number) {
    line-height: 27px;
 }
+
 .statistic, .features p {
    font-size: 20px;
 }
+
 .news, .review, .footer p {
    font-size: 18px;
 }
+
 .container {
-   width: 960px;
+   max-width: 960px;
    margin: 0 auto;
 }
+
 .head {
+   margin-bottom: 277px;
 }
+
 .head-wrapper {
+   display:  flex;
+   flex-direction: column;
+   text-transform: uppercase;
+   align-items: center;
+   gap: 76px
 }
-.login {
+
+.head-nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-list {
+   display: flex;
+   justify-content: flex-start;
+   height: 72px;
+}
+.nav-item {
+}
+.nav-item:hover {
+   background-color: white;
+   color: black;
+}
+.nav-link{
+   display: block;
+   align-self: center;
+   height: 72px;
+   padding:24px 32px 25px;
+}
+.nav-link:hover {
+   color: black;
+}
+.nav-link:active {
+   opacity: 0.3;
+}
+.link-logo {
+   display: block;
+   order: 1;
+   width: 370px;
+}
+.link-login {
+   display: flex;
+   width: 129px;
+   height: 72px;
+   padding: 28px 22px 28px 26px;
+   justify-content: space-between;
+}
+.link-login:hover {
+   background-color: white;
+   color: black;
+}
+.link-login:active {
+   color: #b3b3b3;
+}
+.link-login:active .login-icon {
+   opacity: 0.1;
+}
+.link-login:hover .login-icon {
+   fill: black;
 }
 .login-icon {
+   align-self: center;
+   opacity: 0.3;
+   fill: white;
 }
+
 .login-button {
+   align-self: center;
 }
+
+/* статистика (2) */
 .statistic {
+   display: flex;
+   justify-content:space-between;
+}
+.statistic-left {
+   background-color:white;
+   color: black;
+   width: 320px;
+   padding: 32px 34px;
+}
+.statistic-left h2 {
+   line-height: 100%;
+   max-width: 202px;
+   margin-bottom: 38px;;
+}
+.statistic-left p {
+   max-width: 202px;
+}
+.statistic-list {
+   max-width: 640px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #353535;
+}
+.statistic-item {
+   width: 320px;
+   padding: 25px 0 30px 34px;
 }
 .number {
    font-size: 72px;
    font-weight: 700;
+   line-height: 100%;
+   margin-bottom: 7px;
 }
-.stat1 {
+.item1 {
+   /* background-color: white;
+   opac */
 }
-.stat2 {
+.item2 {
 }
-.stat3 {
+.item3 {
 }
-.stat4 {
+.item4 {
 }
 .features {
+}
+.features-img {
+   width: 95px;
 }
 .news {
 }
 .day {
+   font-weight: bold;
+   font-size: 30px;
 }
 .month {
+   font-size: 16px;
+   text-transform: uppercase;
 }
 .reviews {
 }
