@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 /* - внешние отступы */
@@ -13,18 +13,23 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
+.hidden {
+   display: none;
+}
 
 body {
    font-family: 'PT Sans Narrow';
    background-color: #292929;
    color: white;
+   background-image: url('../img/back-desktop.jpg');
+   background-position: top;
 }
 img {
    width: 100%;
@@ -41,13 +46,14 @@ h2 {
 h3 {
    font-weight: bold;
    font-size: 30px;
+   line-height: 30px;
 }
 h4 {
    font-size: 24px;
    font-weight: bold;
 }
 
-ul{
+ul {
    list-style: none;
 }
 
@@ -62,35 +68,37 @@ p:not(.number) {
    line-height: 27px;
 }
 
-.statistic, .features p {
+.statistic,
+.features p {
    font-size: 20px;
 }
 
-.news, .review, .footer p {
+.news,
+.review,
+.footer p {
    font-size: 18px;
 }
 
 .container {
-   max-width: 960px;
+   max-width: 1020px;
    margin: 0 auto;
+   padding: 0 30px;
 }
 
-.head {
-   margin-bottom: 277px;
-}
-
-.head-wrapper {
-   display:  flex;
+.header {
+   margin-bottom: 438px;
+   display: flex;
    flex-direction: column;
    text-transform: uppercase;
    align-items: center;
-   gap: 76px
+   gap: 57px;
 }
 
-.head-nav{
+.head-nav {
    width: 100%;
    display: flex;
    justify-content: space-between;
+   background-color: #000;
 }
 
 .nav-list {
@@ -100,15 +108,22 @@ p:not(.number) {
 }
 .nav-item {
 }
+.nav-active {
+   position: relative;
+   top: 24px;
+   height: 3px;
+   width: 100%;
+   background-color: #826550;
+}
 .nav-item:hover {
    background-color: white;
    color: black;
 }
-.nav-link{
+.nav-link {
    display: block;
    align-self: center;
    height: 72px;
-   padding:24px 32px 25px;
+   padding: 24px 32px 25px;
 }
 .nav-link:hover {
    color: black;
@@ -151,59 +166,169 @@ p:not(.number) {
    align-self: center;
 }
 
-/* статистика (2) */
+/* 2323232323232323232323232323232323232323 */
+.stats-feat-background {
+   background-color: #353535;
+   height: 618px;
+}
+.stats-feat-wrapper {
+   height: 779px;
+   position: relative;
+   top: -161px;
+}
+/* статистика (2)22222222222222222222222222222222222222222222222222222222222222222 */
+
 .statistic {
    display: flex;
-   justify-content:space-between;
+   justify-content: space-between;
+   margin-bottom: 77px;
 }
+
 .statistic-left {
-   background-color:white;
+   background-color: white;
    color: black;
    width: 320px;
    padding: 32px 34px;
 }
+
 .statistic-left h2 {
    line-height: 100%;
    max-width: 202px;
-   margin-bottom: 38px;;
+   margin-bottom: 38px;
 }
+
 .statistic-left p {
    max-width: 202px;
 }
+
 .statistic-list {
    max-width: 640px;
    display: flex;
    flex-wrap: wrap;
    background-color: #353535;
 }
+
 .statistic-item {
    width: 320px;
    padding: 25px 0 30px 34px;
 }
+
 .number {
    font-size: 72px;
    font-weight: 700;
    line-height: 100%;
    margin-bottom: 7px;
 }
+
 .item1 {
-   /* background-color: white;
-   opac */
+   background-color: rgba(255, 255, 255, 0.07);
 }
 .item2 {
+   background-color: rgba(255, 255, 255, 0.12);
 }
 .item3 {
+   background-color: rgba(255, 255, 255, 0.04);
 }
 .item4 {
+   background-color: rgba(255, 255, 255, 0.07);
 }
+
+/* преимущества(3)333333333333333333333333333333333333333333333333333333333333333333333 */
 .features {
+   margin-bottom: 38px;
+}
+
+.features-list {
+   display: flex;
+}
+
+.features-item {
+   flex: 1 1 320px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.features h3 {
+   margin-top: 33px;
+   margin-bottom: 12px;
+   text-transform: uppercase;
+}
+.features p {
+   text-align: center;
+   width: 233px;
 }
 .features-img {
    width: 95px;
+   height: 95px;
 }
+
+.angle {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+/* новости-отзывы 454545454545454545454545454545454545454545454545454545454545454545 */
+.news-reviews {
+   background-color: #f8f5f2;
+   color: black;
+}
+.news-reviews a {
+   color: #000;
+   display: block;
+   width: 160px;
+   height: 50px;
+   padding: 13px 29px;
+   border: 1px solid #e5ddd5;
+   text-transform: uppercase;
+}
+
+.news-reviews h2 {
+   text-transform: uppercase;
+}
+
+.news-reviews .line {
+   width: 100%;
+   height: 1px;
+   background-color: #e5ddd5;
+}
+/* новости 44444444444444444444444444444444444444444444444444444444444444444444444444 */
 .news {
 }
+
+.news-head {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   /* margin-bottom: 47px; */
+   padding-top: 54px;
+   padding-bottom: 47px;
+}
+
+.news-list {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 34px;
+}
+.news-item {
+   flex: 0 1 274px;
+   display: flex;
+   gap: 21px;
+}
+
+.date {
+   margin-top: 11px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   flex: 0 0 50px;
+   color: #fff;
+   background-image: url(../img/shield.svg);
+   background-repeat: no-repeat;
+}
+
 .day {
+   margin-top: 3px;
+   margin-bottom: -3px;
    font-weight: bold;
    font-size: 30px;
 }
@@ -211,11 +336,25 @@ p:not(.number) {
    font-size: 16px;
    text-transform: uppercase;
 }
+
+/* отзывы 5555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */
 .reviews {
 }
+
+.reviews-head {
+   display: flex;
+   justify-content: space-between;
+   padding: 37px 0 37px;
+}
+
+.reviews-head a {
+   padding-left: 24px;
+   padding-right: 23px;
+}
+
 .reviews-list {
 }
-.review-item {
+.reviews-item {
 }
 .bold {
    font-weight: bold;

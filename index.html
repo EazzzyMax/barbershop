@@ -8,147 +8,161 @@
       <link rel="stylesheet" href="css/styles.css" />
    </head>
    <body>
-      <header class="head container">
-         <div class="head-wrapper">
-            <a href="#" class="link-logo"><img src="img/logo.svg" alt="Логотип" /></a>
-            <nav class="head-nav">
-               <ul class="nav-list">
-                  <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Наши работы</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Записаться</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">EazzzyMax</a></li>
-               </ul>
-               <a href="login.html" class="link-login">
-                  <svg class="login-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                     <g>
-                        <path d="M7 2H14V14H7V16H16V0H7V2Z" />
-                        <path d="M7 9H0V7H7V4L11 8L7 12V9Z" />
-                     </g>
-                  </svg>
-                  <p class="login-button">Войти</p>
-               </a>
-            </nav>
-         </div>
+      <header class="header">
+         <a href="#" class="link-logo"><img src="img/logo.svg" alt="Логотип" /></a>
+         <nav class="head-nav container">
+            <ul class="nav-list">
+               <li class="nav-item">
+                  <a href="#" class="nav-link"
+                     >Главная
+                     <div class="nav-active"></div
+                  ></a>
+               </li>
+               <li class="nav-item"><a href="#" class="nav-link">Наши работы</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">Записаться</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">EazzzyMax</a></li>
+            </ul>
+            <a href="login.html" class="link-login">
+               <svg class="login-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                     <path d="M7 2H14V14H7V16H16V0H7V2Z" />
+                     <path d="M7 9H0V7H7V4L11 8L7 12V9Z" />
+                  </g>
+               </svg>
+               <p class="login-button">Войти</p>
+            </a>
+         </nav>
       </header>
       <main>
          <h1>Барбершоп "Бородинский"</h1>
-         <section class="statistic container">
-            <div class="statistic-left">
-               <h2>Срижка у нас это выгодно!</h2>
-               <p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-            </div>
-            <ul class="statistic-list">
-               <li class="statistic-item item1" >
-                  <p class="number">1500</p>
-                  <p>рублей вложений</p>
-               </li>
-               <li class="statistic-item item2" >
-                  <p class="number">7 200</p>
-                  <p>секунд времени мастера</p>
-               </li>
-               <li class="statistic-item item3" >
-                  <p class="number">90 000</p>
-                  <p>постриженых волос</p>
-               </li>
-               <li class="statistic-item item4" >
-                  <p class="number">500 000</p>
-                  <p>лайков и комплиментов</p>
-               </li>
-            </ul>
-         </section>
-         <section class="features container">
-            <h2>Преимущества</h2>
-            <ul>
-               <li>
-                  <img class="features-img" src="img/advantage-1-icon.svg" width="95" alt="Иконка ножницы" />
-                  <h3>Быстро</h3>
-                  <p>
-                     Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
-                     стрижки-минутки
-                  </p>
-               </li>
-               <li>
-                  <img class="features-img" src="img/advantage-2-icon.svg" width="95" alt="Иконка кресло" />
-                  <h3>Круто</h3>
-                  <p>
-                     Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае
-                     внешне.
-                  </p>
-               </li>
-               <li>
-                  <img class="features-img" src="img/advantage-3-icon.svg" width="95" alt="Иконка бубершоп" />
-                  <h3>Дорого</h3>
-                  <p>
-                     Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт
-                     определённый статус?
-                  </p>
-               </li>
-            </ul>
-         </section>
-         <section class="news container">
-            <div>
-               <h2>Новости и акции</h2>
-               <a href="#">Показать все</a>
-            </div>
-            <ul>
-               <li>
-                  <div>
-                     <p class="day">29</p>
-                     <p class="month">сент</p>
+         <div class="stats-feat-background">
+            <div class="stats-feat-wrapper">
+               <section class="statistic container">
+                  <div class="statistic-left">
+                     <h2>Срижка у нас это выгодно!</h2>
+                     <p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
                   </div>
-                  <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
-               </li>
-               <li>
-                  <div>
-                     <p class="day">19</p>
-                     <p class="month">сент</p>
-                  </div>
-                  <p>
-                     В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите
-                     записаться!
-                  </p>
-               </li>
-               <li>
-                  <div>
-                     <p class="day">9</p>
-                     <p class="month">сент</p>
-                  </div>
-                  <p>
-                     Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
-                  </p>
-               </li>
-            </ul>
-         </section>
-         <section class="reviews container">
-            <div>
-               <h2>Отзывы о нас</h2>
-               <a href="#">Оставить свой</a>
+                  <ul class="statistic-list">
+                     <li class="statistic-item item1">
+                        <p class="number">1500</p>
+                        <p>рублей вложений</p>
+                     </li>
+                     <li class="statistic-item item2">
+                        <p class="number">7 200</p>
+                        <p>секунд времени мастера</p>
+                     </li>
+                     <li class="statistic-item item3">
+                        <p class="number">90 000</p>
+                        <p>постриженых волос</p>
+                     </li>
+                     <li class="statistic-item item4">
+                        <p class="number">500 000</p>
+                        <p>лайков и комплиментов</p>
+                     </li>
+                  </ul>
+               </section>
+               <section class="features container">
+                  <h2 class="hidden">Преимущества</h2>
+                  <ul class="features-list">
+                     <li class="features-item">
+                        <img class="features-img" src="img/advantage-1-icon.svg" width="95" alt="Иконка ножницы" />
+                        <h3>Быстро</h3>
+                        <p>
+                           Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель
+                           стильной стрижки-минутки
+                        </p>
+                     </li>
+                     <li class="features-item">
+                        <img class="features-img" src="img/advantage-2-icon.svg" width="95" alt="Иконка кресло" />
+                        <h3>Круто</h3>
+                        <p>
+                           Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком
+                           случае внешне.
+                        </p>
+                     </li>
+                     <li class="features-item">
+                        <img class="features-img" src="img/advantage-3-icon.svg" width="95" alt="Иконка бубершоп" />
+                        <h3>Дорого</h3>
+                        <p>
+                           Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не
+                           даёт определённый статус?
+                        </p>
+                     </li>
+                  </ul>
+               </section>
+               <div class="angle">
+                  <img src="img/angle.svg" alt="" />
+               </div>
             </div>
-            <ul class="reviews-list">
-               <li class="review-item">
-                  <img src="img/photo.jpg" alt="" width="249" height="160" />
-                  <h4>Трэвис Баркер</h4>
-                  <p>
-                     Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                  </p>
-               </li>
-               <li class="review-item">
-                  <img src="img/photo.jpg" alt="" width="249" height="160" />
-                  <h4>Трэвис Баркер</h4>
-                  <p>
-                     Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                  </p>
-               </li>
-               <li class="review-item">
-                  <img src="img/photo.jpg" alt="" width="249" height="160" />
-                  <h4>Трэвис Баркер</h4>
-                  <p>
-                     Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                  </p>
-               </li>
-            </ul>
-         </section>
+         </div>
+         <div class="news-reviews">
+            <section class="news container">
+               <div class="news-head">
+                  <h2>Новости и акции</h2>
+                  <a href="#">Показать все</a>
+               </div>
+               <ul class="news-list ">
+                  <li class="news-item">
+                     <div class="date">
+                        <p class="day">29</p>
+                        <p class="month">сент</p>
+                     </div>
+                     <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+                  </li>
+                  <li class="news-item">
+                     <div class="date">
+                        <p class="day">19</p>
+                        <p class="month">сент</p>
+                     </div>
+                     <p>
+                        В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите
+                        записаться!
+                     </p>
+                  </li>
+                  <li class="news-item">
+                     <div class="date">
+                        <p class="day">9</p>
+                        <p class="month">сент</p>
+                     </div>
+                     <p>
+                        Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь
+                        подвох!
+                     </p>
+                  </li>
+               </ul>
+            </section>
+            <div class="line"></div>
+            <section class="reviews container">
+               <div class="reviews-head">
+                  <h2>Отзывы о нас</h2>
+                  <a href="#">Оставить свой</a>
+               </div>
+               <ul class="reviews-list">
+                  <li class="reviews-item">
+                     <img src="img/photo.jpg" alt="" width="249" height="160" />
+                     <h4>Трэвис Баркер</h4>
+                     <p>
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                     </p>
+                  </li>
+                  <li class="review-item">
+                     <img src="img/photo.jpg" alt="" width="249" height="160" />
+                     <h4>Трэвис Баркер</h4>
+                     <p>
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                     </p>
+                  </li>
+                  <li class="review-item">
+                     <img src="img/photo.jpg" alt="" width="249" height="160" />
+                     <h4>Трэвис Баркер</h4>
+                     <p>
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                     </p>
+                  </li>
+               </ul>
+            </section>
+         </div>
       </main>
       <footer class="footer">
          <div class="container">
