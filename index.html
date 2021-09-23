@@ -102,7 +102,7 @@
                   <h2>Новости и акции</h2>
                   <a href="#">Показать все</a>
                </div>
-               <ul class="news-list ">
+               <ul class="news-list">
                   <li class="news-item">
                      <div class="date">
                         <p class="day">29</p>
@@ -138,41 +138,34 @@
                   <h2>Отзывы о нас</h2>
                   <a href="#">Оставить свой</a>
                </div>
-               <ul class="reviews-list">
-                  <li class="reviews-item">
-                     <img src="img/photo.jpg" alt="" width="249" height="160" />
-                     <h4>Трэвис Баркер</h4>
-                     <p>
-                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                     </p>
-                  </li>
-                  <li class="review-item">
-                     <img src="img/photo.jpg" alt="" width="249" height="160" />
-                     <h4>Трэвис Баркер</h4>
-                     <p>
-                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                     </p>
-                  </li>
-                  <li class="review-item">
-                     <img src="img/photo.jpg" alt="" width="249" height="160" />
-                     <h4>Трэвис Баркер</h4>
-                     <p>
-                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                     </p>
-                  </li>
-               </ul>
+               <div class="reviews-carusel">
+                  <div class="reviews-left"></div>
+                  <ul class="reviews-list">
+                     <li class="review-item">
+                        <img src="img/photo.jpg" alt="" width="249" height="160" />
+                        <div class="review-text">
+                           <p class="review-name">Трэвис Баркер</p>
+                           <p>
+                              Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую
+                              татуировку!
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="reviews-right"></div>
+               </div>
             </section>
          </div>
       </main>
       <footer class="footer">
-         <div class="container">
-            <div>
+         <div class="footer-wrapper container">
+            <div class="footer-contacts">
                <p>
                   <span class="bold">Барбершоп Бородинский</span><br /><br />
                   г. Санкт-Петербург, ул. Большая Конюшенная 19/8 Тел.: +7 (812) 555-66-66
                </p>
             </div>
-            <div>
+            <div class="social">
                <p>Давайте дружить!</p>
                <ul class="social-list">
                   <li class="social-item">
@@ -186,9 +179,9 @@
                   </li>
                </ul>
             </div>
-            <div>
+            <div class="developedBy">
                <p>Разработано:</p>
-               <p class="developedBy">EazzzyMax</p>
+               <p class="developedBy-name">EazzzyMax</p>
             </div>
          </div>
       </footer>
