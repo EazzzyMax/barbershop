@@ -20,10 +20,6 @@ li {
    padding: 0;
 }
 
-.hidden {
-   display: none;
-}
-
 body {
    font-family: 'PT Sans Narrow';
    background-color: #292929;
@@ -267,6 +263,10 @@ p:not(.number) {
    bottom: 0;
    width: 100%;
 }
+.angle-img {
+   width: 100%;
+}
+
 /* новости-отзывы 454545454545454545454545454545454545454545454545454545454545454545 */
 .news-reviews {
    background-color: #f8f5f2;
@@ -403,11 +403,14 @@ p:not(.number) {
 
 .bold {
    font-weight: bold;
+   text-transform: uppercase;
 }
 
-
+/* подвал!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .footer {
-background-color: #292929;
+   background-color: #292929;
+   padding-top: 51px;
+   padding-bottom: 55px;
 }
 
 .footer-wrapper {
@@ -415,25 +418,28 @@ background-color: #292929;
    justify-content: space-between;
 }
 
+/* 1 */
 .footer-contacts {
-
    flex: 1 1 320px;
 }
 
+/* 2 */
 .social {
-   
    flex: 1 1 320px;
 }
 
 .social-list {
    display: flex;
+}
 
+.social  * {
+   width: max-content;
 }
 
 .social-item {
    width: 50px;
    height: 50px;
-   border: 1px solid #4A4A4A;
+   border: 1px solid #4a4a4a;
 }
 
 .social-link {
@@ -449,12 +455,34 @@ background-color: #292929;
    display: inline;
 }
 
-.developedBy{
+/* 3 */
+.developedBy {
    flex: 1 1 320px;
+   height: max-content;
+   align-self: center;
+}
 
+.developedBy p {
+   width: max-content;
+}
+
+.developedBy-wrapper {
+width: max-content;
+float: right;
+}
+
+.developedBy-header {
+   margin: auto;
+   margin-bottom: 13px;
 }
 
 .developedBy-name {
    font-weight: bold;
    display: block;
+   border: 1px solid #4a4a4a;
+   padding: 14px 28px;
+}
+
+.hidden {
+   display: none;
 }
