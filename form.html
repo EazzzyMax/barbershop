@@ -42,16 +42,16 @@
    </header>
 
    <main class="main">
-      <div class="form">
-         <div class="form-wrapper container">
-            <div class="form-header">
+      <div class="reg">
+         <div class="reg-wrapper container">
+            <div class="reg-header">
                <h1>Запись на стрижку</h1>
-               <a href="" class="bigButton">
+               <a href="/index.html" class="bigButton">
                   <p class="bbTxt">На главную</p>
                </a>
             </div>
-            <div>
-               <form action="#">
+            <section class="booking">
+               <form class="booking-form" action="#">
                   <ul class="form-list">
                      <li class="form-item item1"><input placeholder="Фамилия" type="text" class="form-input"></li>
                      <li class="form-item item2"><input placeholder="Имя" type="text" class="form-input"></li>
@@ -61,11 +61,39 @@
                      <li class="form-item item5"><input placeholder="Контактный e-mail" type="text" class="form-input">
                      </li>
                      <li class="form-item item6">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="Доп. информация для мастера" id="info" cols="30"
+                           rows="10"></textarea>
                      </li>
                   </ul>
                </form>
-            </div>
+            </section>
+
+            <section class="beard">
+               <fieldset class="beard-form">
+                  <legend class="beard-form__legend"></legend>
+                  <label for="" class="beard-form__label">
+                     <input type="text" class="beard-form__input visually-hidden">
+                     <span class="beard-form__radio-replacer"></span>
+                     адмирал  
+                  </label>
+                  <label for="" class="beard-form__label">
+                     <input type="text" class="beard-form__input visually-hidden">
+                     <span class="beard-form__radio-replacer"></span>                                             
+                  </label>
+                  <label for="" class="beard-form__label">
+                     <input type="text" class="beard-form__input visually-hidden">
+                     <span class="beard-form__radio-replacer"></span>
+                  </label>
+                  <label for="" class="beard-form__label">
+                     <input type="text" class="beard-form__input visually-hidden">
+                     <span class="beard-form__radio-replacer"></span>
+                  </label>
+                  <label for="" class="beard-form__label">
+                     <input type="text" class="beard-form__input visually-hidden">
+                     <span class="beard-form__radio-replacer"></span>
+                  </label>
+               </fieldset>
+            </section>
          </div>
       </div>
    </main>
