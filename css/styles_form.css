@@ -13,6 +13,7 @@ h1 {
    background-color: #f8f5f2;
    color: #000;
    padding-top: 53px;
+   padding-bottom: 87px;
 }
 
 .reg-header {
@@ -114,4 +115,24 @@ textarea:active {
 }
 #info::placeholder {
    color: black;
+}
+
+
+.beard {
+   margin-top: 65px;
+}
+
+.beard-form {
+   display: flex;
+   justify-content: space-between;
+}
+
+.beard-form__label {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+
+.beard-form__label img {
+   /* width: 52px; */
 }
