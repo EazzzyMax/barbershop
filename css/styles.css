@@ -15,7 +15,8 @@ h4,
 p,
 ul,
 ol,
-li {
+li,
+fieldset {
    margin: 0;
    padding: 0;
 }
@@ -69,6 +70,20 @@ a {
 
 p:not(.number) {
    line-height: 27px;
+}
+
+.bigButton {
+   height: 52px;
+   min-width: 160px;
+   border: 1px solid #e5ddd5;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.bbTxt {
+   text-transform: uppercase;
+   color: #000;
 }
 
 .visually-hidden {
