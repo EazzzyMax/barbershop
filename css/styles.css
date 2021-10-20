@@ -6,21 +6,6 @@
    box-sizing: border-box;
 }
 
-/* - внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-fieldset {
-   margin: 0;
-   padding: 0;
-}
-
 body {
    font-family: 'PT Sans Narrow';
    background-color: #292929;
@@ -36,10 +21,7 @@ body {
 main {
    margin-top: auto;
 }
-img {
-   /* width: 100%; */
-   display: block;
-}
+
 
 h1 {
 }
@@ -72,16 +54,17 @@ p:not(.number) {
    line-height: 27px;
 }
 
-.bigButton {
+.big-button {
    height: 52px;
    min-width: 160px;
+   padding: 0 15px;
    border: 1px solid #e5ddd5;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
 }
 
-.bbTxt {
+.big-button__text {
    text-transform: uppercase;
    color: #000;
 }

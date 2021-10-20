@@ -3,7 +3,7 @@ main {
 }
 h1 {
    font-weight: bold;
-   font-style: 40px;
+   font-size: 40px;
    line-height: 52px;
    text-transform: uppercase;
    width: max-content;
@@ -12,14 +12,14 @@ h1 {
 
 
 
-.reg {
+.registration {
    background-color: #f8f5f2;
    color: #000;
    padding-top: 53px;
    padding-bottom: 87px;
 }
 
-.reg__header {
+.section-header {
    display: flex;
    justify-content: space-between;
    margin-bottom: 66px;
@@ -51,32 +51,31 @@ form {
 .booking__item:focus {
 }
 
-.booking__item.item1 {
-   background-color: #f00;
+.booking__item1 {
    grid-column-start: 1;
    grid-column-end: 3;
 }
 
-.booking__item.item2 {
+.booking__item2 {
    grid-column: 3/5;
 }
-.booking__item.item3 {
+.booking__item3 {
    grid-column: 5/7;
 }
-.booking__item.item4 {
+.booking__item4 {
    grid-row: 2/2;
    grid-column: 1/4;
 }
-.booking__item.item5 {
+.booking__item5 {
    grid-row: 2/2;
    grid-column: 4/7;
 }
-.booking__item.item6 {
+.booking__item6 {
    grid-row: 3/3;
    grid-column: 1/7;
 }
 
-.booking__item input {
+.booking__input {
    height: 100%;
    width: 100%;
    background: #ffffff;
